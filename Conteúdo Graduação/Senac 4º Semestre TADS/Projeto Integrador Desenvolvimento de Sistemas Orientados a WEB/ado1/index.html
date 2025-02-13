@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulário de Contato</title>
+  </head>
+  <body>
+    <!-- Div principal (container) -->
+    <div class="container">
+      <!-- Div para o elementos que estão acima do formulário (cabeçalho) -->
+      <div class="cabecalho">
+        <span id="titulo">Formulário de Contato</span>
+        <p class="informacao-cabecalho">Preenche todos os campos</p>
+      </div>
+
+      <!-- Formulário -->
+      <form class="formulario">
+        <!--  Div para a formatação de cada par de elemento (labels e input) -->
+        <div class="elementos-formulario">
+          <label for="input-nome-usuario">Nome:</label>
+          <input
+            class="campo-texto-padrao"
+            type="text"
+            name="nome"
+            id="input-nome-usuario"
+            placeholder="Digite seu nome"
+            required
+            autofocus
+          />
+        </div>
+
+        <!-- Div para a formatação de cada par de elemento (labels e input) -->
+        <div class="elementos-formulario">
+          <label for="input-email-usuario">e-mail:</label>
+          <input
+            class="campo-texto-padrao"
+            type="email"
+            name="email"
+            id="input-email-usuario"
+            placeholder="Digite o seu e-mail"
+            required
+          />
+        </div>
+
+        <!-- Div para a formatação de cada par de elemento (labels e select)  -->
+        <div class="elementos-formulario">
+          <label for="combo-box-opcoes">Assunto:</label>
+          <select class="opcoes-combo-box" name="opcoes" id="combo-box-opcoes">
+            <option value="Java">Java</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Python">Python</option>
+            <option value="C#">C#</option>
+            <option value="PHP">PHP</option>
+          </select>
+        </div>
+
+        <!-- Div para a formatação de cada par de elemento (labels e select)  -->
+        <div class="elementos-formulario elemento-campo-texto">
+          <label for="text-area-usuario">Mensagem:</label>
+          <textarea
+            class="campo-texto"
+            name="mensagem"
+            id="text-area-usuario"
+            rows="8"
+          ></textarea>
+        </div>
+
+        <!-- Botão -->
+        <input class="botao-salvar" type="submit" name="botao-enviar" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo do HTML */
+body {
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  background-color: inherit;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Div principal (container) */
+.container {
+  display: flex;
+  width: 65%;
+  height: 65%;
+  flex-direction: column;
+  background-color: #a52a2a;
+  margin: 2.5rem;
+  border: 0.5rem solid #1e1bb1;
+  border-radius: 2rem;
+}
+
+/* Div do cabeçalho */
+.cabecalho {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Pseudo-elemento para colocar uma linha entre a div do cabeçalho e o formulário */
+.cabecalho::after {
+  content: "";
+  display: block;
+  width: 98%;
+  margin-top: 2rem;
+  border-bottom: 0.09rem solid #d7d7d7;
+  border-radius: 0.25rem;
+}
+
+/* Span do cabeçalho */
+#titulo {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+/* p do cabeçalho */
+.informacao-cabecalho {
+  margin-top: 2.5rem;
+  font-weight: bold;
+}
+
+/* Form */
+.formulario {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Elementos dentro do formulário */
+.elementos-formulario {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  margin-left: 2.5rem;
+}
+
+.campo-texto-padrao::placeholder {
+  padding-left: 0.5rem;
+}
+
+/* Campo de texto (text-area) */
+.campo-texto {
+  width: calc(100% - 1.5rem);
+  margin-right: 1rem;
+  border: 0.09rem solid #000;
+  border-radius: 0.25rem;
+}
+
+/* Mudando o direcionamento do Campo de texto */
+.elemento-campo-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+/* Input (text e e-mail) e select (combo-box) */
+.campo-texto-padrao,
+.opcoes-combo-box {
+  width: 25%;
+  height: 2.5rem;
+  border: 0.09rem solid #000;
+  border-radius: 0.25rem;
+}
+
+/* Deixando o tamanho do select automático, baseado no tamanho dos elementos interno */
+#combo-box-opcoes {
+  width: auto;
+}
+
+/* Input submit (Botão Enviar) */
+.botao-salvar {
+  width: 5rem;
+  height: 2rem;
+  border: 0.09rem solid #000;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  margin-left: 2.5rem;
+  margin-bottom: 2.5rem;
+}
