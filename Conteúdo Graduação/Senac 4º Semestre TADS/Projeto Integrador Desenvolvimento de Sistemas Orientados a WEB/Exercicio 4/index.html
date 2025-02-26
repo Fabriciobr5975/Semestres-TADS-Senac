@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Operações Matemáticas</title>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <!-- Borda interna -->
+      <div id="borda-interna">
+        <!-- Formulário -->
+        <form name="formulario" class="form-operacoes">
+          <!-- Entrada dos Dados -->
+          <div class="entrada-dados elementos-formulario">
+            <label for="entrada-dados-01">
+              <b>Valor 1:</b>
+              <input
+                type="text"
+                name="valor1"
+                id="entrada-dados-01"
+                class="campo-texto"
+                placeholder="Digite um valor númerico"
+                required
+                autofocus
+              />
+            </label>
+
+            <label for="entrada-dados-02 elementos-formulario">
+              <b>Valor 2:</b>
+              <input
+                type="text"
+                name="valor-02"
+                id="valor2"
+                class="campo-texto"
+                placeholder="Digite um valor númerico"
+                required
+                autofocus
+              />
+            </label>
+          </div>
+
+          <!-- Entrada da opção da operação aritimética -->
+          <div class="opcoes-operacoes">
+            <span><b>Opções:</b></span>
+
+            <label for="opcao-soma">
+              <input
+                type="radio"
+                name="opcao"
+                id="opcao-soma"
+                class="campo-radio"
+                value="soma"
+                checked
+              />
+              Soma
+            </label>
+
+            <label for="opcao-subtracao">
+              <input
+                type="radio"
+                name="opcao"
+                id="opcao-subtracao"
+                class="campo-radio"
+                value="subtracao"
+              />
+              Subtração
+            </label>
+
+            <label for="opcao-multiplicacao">
+              <input
+                type="radio"
+                name="opcao"
+                id="opcao-multiplicacao"
+                class="campo-radio"
+                value="multiplicacao"
+                
+              />
+              Multiplicação
+            </label>
+
+            <label for="opcao-divisao">
+              <input
+                type="radio"
+                name="opcao"
+                id="opcao-divisao"
+                class="campo-radio"
+                value="divisao"
+              />
+              Divisão
+            </label>
+          </div>
+
+          <div class="resultado">
+            <label for="campo-resultado">
+              <b>Resultado:</b>
+              <input
+                type="text"
+                name="resultado"
+                id="campo-resultado"
+                class="campo-texto"
+                readonly
+              />
+            </label>
+
+            <input
+              class="botao-calcular"
+              type="button"
+              name="calcular"
+              value="Calcular"
+              onclick="mostrarResultados()"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js" defer></script>
+  </body>
+</html>
